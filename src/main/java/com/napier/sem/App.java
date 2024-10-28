@@ -5,8 +5,8 @@ import com.mongodb.client.MongoCollection;
 import org.bson.Document;
 public class App {
     public static void main(String[] args) {
-        // Connect to MongoDB
-        try (MongoClient mongoClient = new MongoClient("localhost", 27000)){
+        // We are connecting to the server called mongo-dbserver, which is the name we gave to our MongoDB container.
+        try (MongoClient mongoClient = new MongoClient("mongo-dbserver")){
         // Get a database - will create when we use it
         MongoDatabase database = mongoClient.getDatabase("mydb");
         // Get a collection from the database
