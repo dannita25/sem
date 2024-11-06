@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.napier.sem</groupId>
-    <artifactId>seMethods</artifactId>
+    <artifactId>GroupProject</artifactId>
     <version>0.1.0.2</version>
 
     <dependencies>
@@ -13,6 +13,7 @@
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
             <version>8.0.28</version>
+            <scope>runtime</scope>
         </dependency>
     </dependencies>
 
@@ -24,7 +25,7 @@
 
     <!--We are defining how Maven assembles the JAR file.-->
     <!--We are telling Maven which class to run when the JAR is executed (mainClass)-->
-    <!--We are telling Maven to build the jar-with-dependencies - in other words pull in the MongoDB code.-->
+    <!--We are telling Maven to build the jar-with-dependencies - in other words pull in the SQL code.-->
     <build>
         <plugins>
             <plugin>
